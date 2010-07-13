@@ -20,6 +20,8 @@
 		CA9680A711A21114005114B4 /* 104-index-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = CA9680A511A21114005114B4 /* 104-index-cards.png */; };
 		CA9680A911A211D6005114B4 /* DynamicTableCells.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9680A811A211D6005114B4 /* DynamicTableCells.xib */; };
 		CA9680B111A212B0005114B4 /* WTTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9680B011A212B0005114B4 /* WTTableCell.m */; };
+		CA9FF39111EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9FF38F11EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.m */; };
+		CA9FF39211EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9FF39011EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.xib */; };
 		CAE3DB28119CDA1B006ADC3E /* WTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE3DB26119CDA1B006ADC3E /* WTTableViewController.m */; };
 		CAE3DB29119CDA1B006ADC3E /* WTTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE3DB27119CDA1B006ADC3E /* WTTableViewController.xib */; };
 /* End PBXBuildFile section */
@@ -42,10 +44,13 @@
 		CA96807511A205C3005114B4 /* WTDynamicTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTDynamicTableViewController.xib; sourceTree = "<group>"; };
 		CA9680A411A21114005114B4 /* 96-book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "96-book.png"; path = "Assets/96-book.png"; sourceTree = "<group>"; };
 		CA9680A511A21114005114B4 /* 104-index-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "104-index-cards.png"; path = "Assets/104-index-cards.png"; sourceTree = "<group>"; };
-		CA9680A811A211D6005114B4 /* DynamicTableCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicTableCells.xib; sourceTree = "<group>"; };
+		CA9680A811A211D6005114B4 /* DynamicTableCells.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DynamicTableCells.xib; path = Classes/DynamicTableCells.xib; sourceTree = "<group>"; };
 		CA9680AF11A212B0005114B4 /* WTTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTableCell.h; sourceTree = "<group>"; };
 		CA9680B011A212B0005114B4 /* WTTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTableCell.m; sourceTree = "<group>"; };
 		CA96812511A21E61005114B4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CA9FF38E11EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDynamicTableViewControllerIOS4.h; sourceTree = "<group>"; };
+		CA9FF38F11EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDynamicTableViewControllerIOS4.m; sourceTree = "<group>"; };
+		CA9FF39011EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTDynamicTableViewControllerIOS4.xib; sourceTree = "<group>"; };
 		CAE3DB25119CDA1B006ADC3E /* WTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTableViewController.h; sourceTree = "<group>"; };
 		CAE3DB26119CDA1B006ADC3E /* WTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTableViewController.m; sourceTree = "<group>"; };
 		CAE3DB27119CDA1B006ADC3E /* WTTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WTTableViewController.xib; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CA9FF38211EBF83B00AB59EA /* iOS4 */,
 				CA9680AB11A21222005114B4 /* Table Cells */,
 				CA96807A11A20A2D005114B4 /* Dynamic */,
 				CA96807911A20A23005114B4 /* Static */,
@@ -110,6 +116,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CA9680A811A211D6005114B4 /* DynamicTableCells.xib */,
 				CA9680A411A21114005114B4 /* 96-book.png */,
 				CA9680A511A21114005114B4 /* 104-index-cards.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -144,7 +151,6 @@
 				CA96807311A205C3005114B4 /* WTDynamicTableViewController.h */,
 				CA96807411A205C3005114B4 /* WTDynamicTableViewController.m */,
 				CA96807511A205C3005114B4 /* WTDynamicTableViewController.xib */,
-				CA9680A811A211D6005114B4 /* DynamicTableCells.xib */,
 			);
 			name = Dynamic;
 			sourceTree = "<group>";
@@ -158,6 +164,16 @@
 				CA44FF6F11A356E700B3A12E /* WTInputCell.m */,
 			);
 			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+		CA9FF38211EBF83B00AB59EA /* iOS4 */ = {
+			isa = PBXGroup;
+			children = (
+				CA9FF38E11EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.h */,
+				CA9FF38F11EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.m */,
+				CA9FF39011EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.xib */,
+			);
+			name = iOS4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +224,7 @@
 				CA9680A611A21114005114B4 /* 96-book.png in Resources */,
 				CA9680A711A21114005114B4 /* 104-index-cards.png in Resources */,
 				CA9680A911A211D6005114B4 /* DynamicTableCells.xib in Resources */,
+				CA9FF39211EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +241,7 @@
 				CA96807611A205C3005114B4 /* WTDynamicTableViewController.m in Sources */,
 				CA9680B111A212B0005114B4 /* WTTableCell.m in Sources */,
 				CA44FF7011A356E700B3A12E /* WTInputCell.m in Sources */,
+				CA9FF39111EBF92A00AB59EA /* WTDynamicTableViewControllerIOS4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +284,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -280,7 +298,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.3;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};

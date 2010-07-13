@@ -1,19 +1,20 @@
 //
-//  WTDynamicTableViewController.h
+//  WTDynamicTableViewControllerIOS4.h
 //  IB_TableCells
 //
-//  Created by Brandon Alexander on 5/17/10.
+//  Created by Brandon Alexander on 7/12/10.
 //  Copyright 2010 While This, inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 @class WTTableCell;
 
-@interface WTDynamicTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface WTDynamicTableViewControllerIOS4 : UIViewController <UITableViewDelegate, UITableViewDataSource> {
 	NSMutableArray *itemArray;
 	
 	UITableView *myTableView;
 	WTTableCell *myCell;
+	UINib *cellNib;
 }
 
 @property (nonatomic, retain) NSMutableArray *itemArray;
