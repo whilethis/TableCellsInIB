@@ -56,7 +56,8 @@
 		
 		cell = myCell;
 		
-		//Clear out
+		//Clear out, this makes the cell property available to be loaded again when the NIB
+		//is instantiated.
 		[self setMyCell:nil];
     }
     
