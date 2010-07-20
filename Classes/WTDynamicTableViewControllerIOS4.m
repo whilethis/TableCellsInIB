@@ -20,10 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	if(!cellNib) {
-		cellNib = [[UINib nibWithNibName:@"DynamicTableCells" bundle:nil] retain];
-	}
-	
 	itemArray = [[NSMutableArray alloc] init];
 	
 	for (int i = 0; i < 1000; i++) {
@@ -57,7 +53,7 @@
 		NSLog(@"Loaded");
 		//Load Nib
 		
-		[cellNib instantiateWithOwner:self options:nil];
+		[[self cellNib] instantiateWithOwner:self options:nil];
 		//[[NSBundle mainBundle] loadNibNamed:@"DynamicTableCells" owner:self options:nil];
 		
 		cell = myCell;
@@ -100,6 +96,14 @@
 	
 	[date release];
 	[newObject release];
+}
+
+-(UINib *)cellNib {
+	if(!cellNib) {
+		cellNib = [[UINib nibWithNibName:@"DynamicTableCells" bundle:nil] retain];
+	}
+	
+	return cellNib;
 }
 
 
