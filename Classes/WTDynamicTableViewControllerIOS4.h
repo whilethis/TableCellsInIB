@@ -24,4 +24,6 @@
 
 -(IBAction) addItem:(id)sender;
 
+-(UINib *) cellNib;
+
 @end
