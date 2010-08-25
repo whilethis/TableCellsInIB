@@ -13,6 +13,7 @@
 	UITextField *inputView;
 }
 
+//Adding a comment
 @property (retain, nonatomic) IBOutlet UITextField *inputView;
 
 @end
